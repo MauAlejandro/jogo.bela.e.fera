@@ -23,25 +23,26 @@ function draw() {
 
     image(grass, 0, 0, tamanho * 9, tamanho * 9)
 
-    image(bela, 260, 110, 40, 40)
+    image(bela, 250, 100, 40, 40)
+
 
     for (let i = 0; i < 9; i++) {
         for (let j = 0; j < 9; j++) {
             image(arbusto, tamanho * i, tamanho * j, tamanho, tamanho)
 
+            image(fera, andarx, andary, tamanho, tamanho)
         }
     }
 
+    if (fera && andarx === 250 && andary === 100) {
 
-    image(fera, andarx, andary, tamanho, tamanho)
+        rect(140, 165, 150, 100)
+        text("you win", 160, 220)
+        textSize(30)
 
-    rect(140, 140, 150, 150)
-    text("you win", 160, 220)
-    textSize(30)
-    if (fera && andarx === 260 && andary === 110) {
-
-
+        noLoop(button = createButton("restar"))
     }
+
 
 }
 
