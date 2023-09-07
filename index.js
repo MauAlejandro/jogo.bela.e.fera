@@ -2,7 +2,7 @@ let fera
 let bela
 let grass
 let arbusto
-
+//
 const tamanho = 50
 
 let andarx = 0
